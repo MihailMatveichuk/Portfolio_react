@@ -1,9 +1,7 @@
- import "./About.scss"
- 
- const About = () => {
-   return (
-     <div>About</div>
-   )
- }
- 
- export default About
+import "./About.scss";
+
+const About = () => {
+  return <section id="about">About</section>;
+};
+
+export default About;
