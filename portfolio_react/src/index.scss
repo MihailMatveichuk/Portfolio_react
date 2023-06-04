@@ -37,7 +37,7 @@ body {
   background: var(--color-bg);
   color: var(--color-white);
   line-height: 1.7;
-  background-image: linear-gradient(135deg, #0d0f31 25%, transparent 25%), linear-gradient(225deg, #0d0f31 25%, transparent 25%), linear-gradient(45deg, #0d0f31 25%, transparent 25%), linear-gradient(315deg, #0d0f31 25%, #e5e5f700 25%);
+  background-image:  linear-gradient(45deg, #0d0f3181 25%, transparent 30%), linear-gradient(315deg, #0d0f3167 25%, #e5e5f700 25%);
   background-position: 10px 0, 10px 0, 0 0, 0 0;
   background-size: 10px 10px;
   background-repeat: repeat;
@@ -84,7 +84,7 @@ a {
   color: var(--color-primary);
   transition: var(--transition);
 
-  :hover {
+  &:hover {
     color: var(--color-white);
   }
 }
@@ -98,7 +98,7 @@ a {
   border-radius: 0.4rem;
   cursor: pointer;
   border: 1px solid var(--color-primary);
-  :hover{
+  &:hover{
     background: var(--color-white);
     color: var(--color-bg);
     border-color: transparent;
