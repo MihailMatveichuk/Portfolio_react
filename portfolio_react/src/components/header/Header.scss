@@ -38,8 +38,8 @@ header{
         margin: 0 auto;
         opacity: 0.8;
         border-radius: 50%;
-        width: 26rem;
-        height: 25rem;
+        width: 30rem;
+        height: 30rem;
         overflow: hidden;
     }
 }
@@ -58,8 +58,8 @@ header{
 @media screen and (max-width: 1200px){
     .my-photo {
         img{
-            width: 17rem;
-            height: 17rem;
+            width: 22rem;
+            height: 22rem;
         }
     }
   }
@@ -69,6 +69,13 @@ header{
     .header__socials,
     .scroll__down{
         display: none;
+    }
+
+    .my-photo {
+        img{
+            width: 16rem;
+            height: 16rem;
+        }
     }
   }
 
