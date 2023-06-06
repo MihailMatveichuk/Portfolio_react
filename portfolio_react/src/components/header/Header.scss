@@ -6,7 +6,6 @@ header{
 
 .header__container{
     text-align: center;
-    height: 100%;
     position: relative;
     .cta{
         margin-top: 2.5rem;
@@ -56,11 +55,21 @@ header{
 
 // ================ MEDIUM DEVICES ================
 @media screen and (max-width: 1200px){
+    header{
+        height: max-content;
+    }
+    
     .my-photo {
         img{
             width: 22rem;
             height: 22rem;
         }
+    }
+    .header__socials{
+        bottom: 26rem;
+    }
+    .scroll__down{
+        bottom: 28rem;
     }
   }
   
@@ -70,6 +79,7 @@ header{
     .scroll__down{
         display: none;
     }
+
 
     .my-photo {
         img{

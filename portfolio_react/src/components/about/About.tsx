@@ -36,10 +36,13 @@ const About = () => {
             </article>
           </div>
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui
-            consequuntur odio quia. Quas consectetur molestias fugit dolorem
-            non, quisquam commodi, reiciendis, aspernatur quaerat sed
-            consequuntur aut suscipit voluptatem perspiciatis ad.
+            Hello! My name is Mikhail. I have been programming for a year. As a
+            Front-end developer I have made some small projects on React and
+            JavaScript Native. I have acquired experience in managing a small
+            team: I was Team Leader while fulfilling the final project of JS
+            course at RS School. Generally I use TypeScript when I make my
+            projects. I am always ready to work hard gradually improving my hard
+            and soft skills.
           </p>
           <a href="#contact" className="btn btn-primary">
             Let's Talk
