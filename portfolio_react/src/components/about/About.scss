@@ -35,7 +35,7 @@
             border-radius: 1rem;
             padding: 2.5rem;
             text-align: center;
-            transform: var(--transition);
+            transition: var(--transition);
 
             &:hover {
                 background: transparent;
