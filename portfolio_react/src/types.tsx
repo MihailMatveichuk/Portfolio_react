@@ -12,3 +12,10 @@ export type IServices = {
     forth?: string;
   };
 };
+
+export type IPortfolio = {
+  src: string;
+  title: string;
+  GitHub: string;
+  LiveDemo: string;
+};
