@@ -35,7 +35,7 @@
             border-radius: 1rem;
             padding: 2.5rem;
             text-align: center;
-            transform: var(--transition);
+            transition: var(--transition);
 
             &:hover {
                 background: transparent;
@@ -62,6 +62,8 @@
 
     .about__content p {
         margin: 2rem 0 2.6rem;
+        text-align: justify;
+        text-indent: 25px;
         color: var(--color-light);
     }
 }
@@ -95,8 +97,9 @@
         gap: 1rem;
     }
 
-    .about__content {
-        text-align: center;
+    .about__content, .about__content p{
+        text-align: center!important;
+        text-indent: 0;
 
         p {
             margin: 1.5rem 0;
