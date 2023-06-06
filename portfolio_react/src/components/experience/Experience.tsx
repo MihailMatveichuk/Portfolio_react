@@ -13,9 +13,13 @@ const Experience = () => {
         <div className="experience__frontend">
           <h3>Frontend Development</h3>
           <div className="experience__content">
-            {articlesToFront.map((item: IArticle) => {
+            {articlesToFront.map((item: IArticle, i) => {
               return (
-                <Article title={item.title} description={item.description} />
+                <Article
+                  title={item.title}
+                  description={item.description}
+                  key={i}
+                />
               );
             })}
           </div>
@@ -23,9 +27,13 @@ const Experience = () => {
         <div className="experience__backend">
           <h3>Backend Development</h3>
           <div className="experience__content">
-            {articlesToBack.map((item: IArticle) => {
+            {articlesToBack.map((item: IArticle, i) => {
               return (
-                <Article title={item.title} description={item.description} />
+                <Article
+                  title={item.title}
+                  description={item.description}
+                  key={i}
+                />
               );
             })}
           </div>
