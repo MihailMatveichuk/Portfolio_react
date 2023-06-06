@@ -1,5 +1,5 @@
-nav{
-    background: rgba(0,0,0,0.3);
+nav {
+    background: rgba(0, 0, 0, 0.3);
     width: max-content;
     display: block;
     padding: 0.7rem 1.7rem;
@@ -12,7 +12,9 @@ nav{
     gap: 0.8rem;
     border-radius: 3rem;
     backdrop-filter: blur(15px);
-    a{
+
+    a {
+        position: relative;
         background: transparent;
         padding: 0.9rem;
         border-radius: 50%;
@@ -20,11 +22,22 @@ nav{
         color: var(--color-light);
         font-size: 1.1rem;
         transition: all 0.5s;
-        &:hover{
-            background: rgba(0,0,0,0.3);
+
+        &:hover {
+            background: rgba(0, 0, 0, 0.3);
         }
+
+        &[title]:hover:after {
+            position: absolute;
+            content: attr(title);
+            font-size: small;
+            top: -30px;
+            left: 0;
+        }
+
     }
-    .active{
+
+    .active {
         background: var(--color-bg);
     }
 }
