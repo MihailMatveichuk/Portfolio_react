@@ -23,7 +23,7 @@ export const portfolioData = [
     src: Marvel,
     title: "Marvel Comics",
     GitHub: "https://github.com/MihailMatveichuk/Marvel",
-    LiveDemo: "https://mihailmatveichuk.github.io/Marvel/",
+    LiveDemo: "https://marvel-react-fletcher.netlify.app/",
   },
   {
     src: Countries,
