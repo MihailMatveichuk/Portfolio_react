@@ -3,7 +3,10 @@ import { testimonialData } from "./testimonialData";
 import "./Testimonials.scss";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/swiper.scss"; // core Swiper
+import { Pagination } from "swiper";
+
+import "swiper/css"; // core Swiper
+import "swiper/css/pagination";
 
 const Testimonials = () => {
   return (
@@ -12,8 +15,10 @@ const Testimonials = () => {
       <h2>Testimonials</h2>
       <Swiper
         className="container testimonials__container"
-        spaceBetween={40}
+        modules={[Pagination]}
+        spaceBetween={50}
         slidesPerView={1}
+        pagination={{ clickable: true }}
       >
         {testimonialData.map((item: ITestimonial, i) => {
           return (
