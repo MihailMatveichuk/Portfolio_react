@@ -1,5 +1,6 @@
 .container.testimonials__container{
-    width: 40%;
+    overflow: hidden;
+    width: 35%;
     .client__avatar{
         width: 4rem;
         aspect-ratio: 1/1;
@@ -11,9 +12,10 @@
     .testimonial{
         background: var(--color-bg-variant);
         text-align: center;
-        padding: 2rem;
+        padding: 3rem;
         border-radius: 2rem;
         user-select: none;
+        cursor: pointer;
     }
 
     .client__review{
@@ -30,6 +32,10 @@
     .container.testimonials__container{
         width: 60%;
     }
+
+    .testimonial{
+        padding: 3rem!important;
+    }
 }
 
   
@@ -40,5 +46,9 @@
     }
     .client__review{
         width: var(--container-width-sm);
+    }
+
+    .testimonial{
+        padding: 2rem!important;
     }
   }

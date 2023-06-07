@@ -1,26 +1,32 @@
 import { ITestimonial } from "../../types";
 import { testimonialData } from "./testimonialData";
-import TestimonialItem from "./TestimonialItem";
 import "./Testimonials.scss";
+
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/swiper.scss"; // core Swiper
 
 const Testimonials = () => {
   return (
     <section id="testimonials">
       <h5>Review from clients</h5>
       <h2>Testimonials</h2>
-
-      <div className="container testimonials__container">
+      <Swiper
+        className="container testimonials__container"
+        spaceBetween={40}
+        slidesPerView={1}
+      >
         {testimonialData.map((item: ITestimonial, i) => {
           return (
-            <TestimonialItem
-              src={item.src}
-              name={item.name}
-              description={item.description}
-              key={i}
-            />
+            <SwiperSlide key={i} className="testimonial">
+              <div className="client__avatar">
+                <img src={item.src} alt={item.name} />
+              </div>
+              <h5 className="client__name">{item.name}</h5>
+              <small className="client__review">{item.description}</small>
+            </SwiperSlide>
           );
         })}
-      </div>
+      </Swiper>
     </section>
   );
 };
