@@ -28,6 +28,10 @@
     }
 }
 
+.swiper-pagination-clickable .swiper-pagination-bullet{
+    background: var(--color-primary);
+}
+
 // ================ MEDIUM DEVICES ================
 @media screen and (max-width: 1200px){
     .container.testimonials__container{
