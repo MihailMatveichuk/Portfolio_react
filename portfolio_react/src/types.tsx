@@ -19,3 +19,9 @@ export type IPortfolio = {
   GitHub: string;
   LiveDemo: string;
 };
+
+export type ITestimonial = {
+  src: string;
+  name: string;
+  description: string;
+};
