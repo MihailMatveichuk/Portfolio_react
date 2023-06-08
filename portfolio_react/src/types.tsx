@@ -18,6 +18,7 @@ export type IPortfolio = {
   title: string;
   GitHub: string;
   LiveDemo: string;
+  delay: string;
 };
 
 export type ITestimonial = {

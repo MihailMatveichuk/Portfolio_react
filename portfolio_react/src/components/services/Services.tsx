@@ -9,7 +9,11 @@ const Services = () => {
       <h5>What I offer</h5>
       <h2>Services</h2>
 
-      <div className="container services__container">
+      <div
+        className="container services__container"
+        data-aos="zoom-in"
+        data-aos-delay="400"
+      >
         {servicesData.map((item: IServices, i) => {
           return (
             <ServiceArticle

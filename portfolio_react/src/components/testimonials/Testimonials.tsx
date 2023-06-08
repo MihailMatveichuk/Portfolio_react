@@ -15,6 +15,9 @@ const Testimonials = () => {
       <h2>Testimonials</h2>
       <Swiper
         className="container testimonials__container"
+        data-aos="fade-up"
+        data-aos-easing="ease-in-sine"
+        data-aos-delay="300"
         modules={[Pagination]}
         spaceBetween={50}
         slidesPerView={1}

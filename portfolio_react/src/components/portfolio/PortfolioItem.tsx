@@ -2,7 +2,11 @@ import { IPortfolio } from "../../types";
 
 const PortfolioItem = (props: IPortfolio) => {
   return (
-    <article className="portfolio__item">
+    <article
+      className="portfolio__item"
+      data-aos="flip-left"
+      data-aos-delay={props.delay}
+    >
       <div className="portfolio__item-image">
         <img src={props.src} alt={props.title} />
       </div>

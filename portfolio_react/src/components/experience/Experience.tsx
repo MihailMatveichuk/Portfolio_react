@@ -10,7 +10,11 @@ const Experience = () => {
       <h2>My Experience</h2>
 
       <div className="container experience__container">
-        <div className="experience__frontend">
+        <div
+          className="experience__frontend"
+          data-aos="flip-up"
+          data-aos-delay="200"
+        >
           <h3>Frontend Development</h3>
           <div className="experience__content">
             {articlesToFront.map((item: IArticle, i) => {
@@ -24,7 +28,11 @@ const Experience = () => {
             })}
           </div>
         </div>
-        <div className="experience__backend">
+        <div
+          className="experience__backend"
+          data-aos="flip-up"
+          data-aos-delay="400"
+        >
           <h3>Backend Development</h3>
           <div className="experience__content">
             {articlesToBack.map((item: IArticle, i) => {

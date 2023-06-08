@@ -17,6 +17,7 @@ const Portfolio = () => {
               title={item.title}
               GitHub={item.GitHub}
               LiveDemo={item.LiveDemo}
+              delay={item.delay}
               key={i}
             />
           );
