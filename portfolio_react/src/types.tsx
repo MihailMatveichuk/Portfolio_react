@@ -26,3 +26,10 @@ export type ITestimonial = {
   name: string;
   description: string;
 };
+
+export type IContactData = {
+  icon: string;
+  title: string;
+  variant: string;
+  link: string;
+};
