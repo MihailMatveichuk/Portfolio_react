@@ -1,7 +1,6 @@
 import { BsPatchCheckFill } from "react-icons/bs";
-import { IArticle } from "../../types";
 
-const Article = (data: IArticle) => {
+const Article = (data) => {
   return (
     <article className="experience__details">
       <BsPatchCheckFill className="experience__details-icon" />

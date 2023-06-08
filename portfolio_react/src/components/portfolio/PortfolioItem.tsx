@@ -1,6 +1,4 @@
-import { IPortfolio } from "../../types";
-
-const PortfolioItem = (props: IPortfolio) => {
+const PortfolioItem = (props) => {
   return (
     <article
       className="portfolio__item"

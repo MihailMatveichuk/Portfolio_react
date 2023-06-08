@@ -1,4 +1,3 @@
-import { ITestimonial } from "../../types";
 import { testimonialData } from "./testimonialData";
 import "./Testimonials.scss";
 
@@ -23,7 +22,7 @@ const Testimonials = () => {
         slidesPerView={1}
         pagination={{ clickable: true }}
       >
-        {testimonialData.map((item: ITestimonial, i) => {
+        {testimonialData.map((item, i) => {
           return (
             <SwiperSlide key={i} className="testimonial">
               <div className="client__avatar">

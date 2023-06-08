@@ -18,7 +18,7 @@ export const contactData = [
   {
     icon: BsWhatsapp,
     title: "WhatsApp",
-    variant: +375293845039,
-    link: "https://api.whatsapp.com/send?=+375293845039",
+    variant: "+375293845039",
+    link: "https://wa.me/375293845039",
   },
 ];

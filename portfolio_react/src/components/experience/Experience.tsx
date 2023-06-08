@@ -1,5 +1,4 @@
 import { articlesToFront, articlesToBack } from "./articles";
-import { IArticle } from "../../types";
 import Article from "./Article";
 import "./Experience.scss";
 
@@ -13,11 +12,11 @@ const Experience = () => {
         <div
           className="experience__frontend"
           data-aos="flip-up"
-          data-aos-delay="200"
+          data-aos-delay="100"
         >
           <h3>Frontend Development</h3>
           <div className="experience__content">
-            {articlesToFront.map((item: IArticle, i) => {
+            {articlesToFront.map((item, i) => {
               return (
                 <Article
                   title={item.title}
@@ -31,11 +30,11 @@ const Experience = () => {
         <div
           className="experience__backend"
           data-aos="flip-up"
-          data-aos-delay="400"
+          data-aos-delay="200"
         >
           <h3>Backend Development</h3>
           <div className="experience__content">
-            {articlesToBack.map((item: IArticle, i) => {
+            {articlesToBack.map((item, i) => {
               return (
                 <Article
                   title={item.title}

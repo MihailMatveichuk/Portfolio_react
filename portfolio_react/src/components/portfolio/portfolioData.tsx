@@ -12,35 +12,35 @@ export const portfolioData = [
     GitHub:
       "https://github.com/MihailMatveichuk/rs-clone-social-network/tree/main",
     LiveDemo: "https://rs-clone-chat.netlify.app/auth",
-    delay: "300",
+    delay: "100",
   },
   {
     src: GraphQL,
     title: "Clone GraphQL",
     GitHub: "https://github.com/wlladislaw/graphiql-app/pull/34",
     LiveDemo: "https://jolly-fairy-7ccee0.netlify.app",
-    delay: "400",
+    delay: "200",
   },
   {
     src: Marvel,
     title: "Marvel Comics",
     GitHub: "https://github.com/MihailMatveichuk/Marvel",
     LiveDemo: "https://marvel-react-fletcher.netlify.app/",
-    delay: "500",
+    delay: "300",
   },
   {
     src: Countries,
     title: "Redux Countries",
     GitHub: "https://github.com/MihailMatveichuk/React-redux-countries",
     LiveDemo: "https://react-redux-countries-rosy.vercel.app/",
-    delay: "600",
+    delay: "400",
   },
   {
     src: Marketplace,
     title: "Online Store",
     GitHub: "https://github.com/MihailMatveichuk/online-store/pull/39",
     LiveDemo: "https://mihailmatveichuk-online-store.netlify.app",
-    delay: "700",
+    delay: "500",
   },
   {
     src: Zoo,
@@ -48,6 +48,6 @@ export const portfolioData = [
     GitHub: "https://github.com/MihailMatveichuk/online-zoo",
     LiveDemo:
       "https://mihailmatveichuk.github.io/online-zoo/pages/main/index.html",
-    delay: "800",
+    delay: "600",
   },
 ];

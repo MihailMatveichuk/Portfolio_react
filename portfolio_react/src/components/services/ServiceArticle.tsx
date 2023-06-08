@@ -1,7 +1,6 @@
 import { BsCheck2 } from "react-icons/bs";
-import { IServices } from "../../types";
 
-const ServiceArticle = (props: IServices) => {
+const ServiceArticle = (props) => {
   return (
     <article className="service">
       <div className="service__head">

@@ -1,5 +1,4 @@
 import { portfolioData } from "./portfolioData";
-import { IPortfolio } from "../../types";
 import "./Portfolio.scss";
 import PortfolioItem from "./PortfolioItem";
 
@@ -10,7 +9,7 @@ const Portfolio = () => {
       <h2>Portfolio</h2>
 
       <div className="container portfolio__container">
-        {portfolioData.map((item: IPortfolio, i) => {
+        {portfolioData.map((item, i) => {
           return (
             <PortfolioItem
               src={item.src}
