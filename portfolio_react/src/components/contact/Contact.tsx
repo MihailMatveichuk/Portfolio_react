@@ -6,7 +6,9 @@ import emailjs from "emailjs-com";
 import "./Contact.scss";
 
 const Contact = () => {
-  const form = useRef();
+  const form = useRef() as React.MutableRefObject<HTMLFormElement>;
+  // eslint-disable-next-line no-useless-escape
+  const reqexp = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
   const sendEmail = () => {
     emailjs
       .sendForm(
@@ -36,7 +38,8 @@ const Contact = () => {
 
   const onSubmit = () => {
     sendEmail();
-    reset;
+    reset();
+    alert("Message was sent");
   };
 
   return (
@@ -63,15 +66,16 @@ const Contact = () => {
             {...register("name", {
               required: "This input is required.",
               pattern: {
-                value: /^[A-Za-z]+$/i,
-                message: "This input is string only.",
+                value:
+                  /^[А-ЯЁІЇЄҐ][а-яёіїєґ]{2,}\s[А-ЯЁІЇЄҐ][а-яёіїєґ]{2,}$|^[A-Z][a-z]{2,}\s[A-Z][a-z]{2,}$/gm,
+                message: "You shold insert your firstname and lasname.",
               },
               minLength: {
-                value: 4,
+                value: 3,
                 message: "This input must exceed more than 3 characters",
               },
             })}
-            placeholder="Your fullname"
+            placeholder="Insert Your fullname"
           />
           <ErrorMessage
             errors={errors}
@@ -88,7 +92,7 @@ const Contact = () => {
             {...register("email", {
               required: "This input is required.",
               pattern: {
-                value: /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/,
+                value: reqexp,
                 message: "This unavailable email.",
               },
             })}

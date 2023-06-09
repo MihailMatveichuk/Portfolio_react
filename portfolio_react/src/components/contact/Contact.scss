@@ -48,6 +48,9 @@ form{
         resize: none;
         color: var(--color-white);
     }
+    input:-webkit-autofill {
+        transition: all 5000s ease-in-out 0s;
+      }
     
     p {
         color: #bf1650;
