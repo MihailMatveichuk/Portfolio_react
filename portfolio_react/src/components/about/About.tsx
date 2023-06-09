@@ -12,7 +12,7 @@ const About = () => {
       <div
         className="container about__container"
         data-aos="fade-up"
-        data-aos-delay="400"
+        data-aos-delay="100"
       >
         <div className="about__me">
           <div className="about__me-image">

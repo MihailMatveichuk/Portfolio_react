@@ -1,6 +1,5 @@
 import { servicesData } from "./servicesArticles";
 import ServiceArticle from "./ServiceArticle";
-import { IServices } from "../../types";
 import "./Services.scss";
 
 const Services = () => {
@@ -12,9 +11,9 @@ const Services = () => {
       <div
         className="container services__container"
         data-aos="zoom-in"
-        data-aos-delay="400"
+        data-aos-delay="200"
       >
-        {servicesData.map((item: IServices, i) => {
+        {servicesData.map((item, i) => {
           return (
             <ServiceArticle
               title={item.title}
