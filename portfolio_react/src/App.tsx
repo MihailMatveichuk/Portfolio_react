@@ -1,7 +1,5 @@
-import "./App.css";
 import { lazy } from "react";
 import Nav from "./components/nav/Nav";
-
 const About = lazy(() => import("./components/about/About"));
 const Contact = lazy(() => import("./components/contact/Contact"));
 const Experience = lazy(() => import("./components/experience/Experience"));
@@ -12,6 +10,7 @@ const Services = lazy(() => import("./components/services/Services"));
 const Testimonials = lazy(
   () => import("./components/testimonials/Testimonials")
 );
+import "./App.css";
 
 function App() {
   return (

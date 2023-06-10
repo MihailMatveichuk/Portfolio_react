@@ -6,10 +6,10 @@ import { BiBookBookmark } from "react-icons/bi";
 import { BsPeople } from "react-icons/bs";
 
 export const navData = [
-  { title: "main", href: "#", img: AiOutlineHome },
-  { title: "about", href: "#about", img: AiOutlineUser },
-  { title: "experience", href: "#experience", img: BiBookBookmark },
-  { title: "services", href: "#services", img: RiServiceLine },
-  { title: "testimonials", href: "#testimonials", img: BsPeople },
-  { title: "contact", href: "#contact", img: BiMessageDetail },
+  { title: "main", img: AiOutlineHome },
+  { title: "about", img: AiOutlineUser },
+  { title: "experience", img: BiBookBookmark },
+  { title: "services", img: RiServiceLine },
+  { title: "testimonials", img: BsPeople },
+  { title: "contact", img: BiMessageDetail },
 ];

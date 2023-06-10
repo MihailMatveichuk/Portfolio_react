@@ -34,7 +34,9 @@ nav {
             content: attr(title);
             font-size: small;
             top: -30px;
-            left: 0;
+            left: 50%;
+            transform: translateX(-50%)
+
         }
 
     }
