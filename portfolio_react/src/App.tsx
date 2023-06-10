@@ -1,13 +1,17 @@
 import "./App.css";
-import About from "./components/about/About";
-import Contact from "./components/contact/Contact";
-import Experience from "./components/experience/Experience";
-import Footer from "./components/footer/Footer";
-import Header from "./components/header/Header";
+import { lazy } from "react";
 import Nav from "./components/nav/Nav";
-import Portfolio from "./components/portfolio/Portfolio";
-import Services from "./components/services/Services";
-import Testimonials from "./components/testimonials/Testimonials";
+
+const About = lazy(() => import("./components/about/About"));
+const Contact = lazy(() => import("./components/contact/Contact"));
+const Experience = lazy(() => import("./components/experience/Experience"));
+const Footer = lazy(() => import("./components/footer/Footer"));
+const Header = lazy(() => import("./components/header/Header"));
+const Portfolio = lazy(() => import("./components/portfolio/Portfolio"));
+const Services = lazy(() => import("./components/services/Services"));
+const Testimonials = lazy(
+  () => import("./components/testimonials/Testimonials")
+);
 
 function App() {
   return (
