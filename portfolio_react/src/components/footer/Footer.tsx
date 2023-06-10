@@ -1,38 +1,27 @@
 import { MdFacebook } from "react-icons/md";
 import { RiInstagramFill } from "react-icons/ri";
 import { SlSocialVkontakte } from "react-icons/sl";
+import { Link } from "react-scroll";
+import { footerData } from "./footerData";
 
 import "./Footer.scss";
 
 const Footer = () => {
   return (
     <footer>
-      <a href="#" className="footer__logo">
+      <Link to="main" className="footer__logo">
         Portfolio
-      </a>
-
+      </Link>
       <ul className="permalinks">
-        <li>
-          <a href="#">Home</a>
-        </li>
-        <li>
-          <a href="#about">About</a>
-        </li>
-        <li>
-          <a href="#experience">Experience</a>
-        </li>
-        <li>
-          <a href="#services">Services</a>
-        </li>
-        <li>
-          <a href="#portfolio">Portfolio</a>
-        </li>
-        <li>
-          <a href="#testimonial">Testimonial</a>
-        </li>
-        <li>
-          <a href="#contact">Contact</a>
-        </li>
+        {footerData.map((link, i) => {
+          return (
+            <li>
+              <Link to={link.link} key={i}>
+                {link.title}
+              </Link>
+            </li>
+          );
+        })}
       </ul>
 
       <div className="footer__socials">

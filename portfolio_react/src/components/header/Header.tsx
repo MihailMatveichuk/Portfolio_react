@@ -1,5 +1,5 @@
 import CTA from "./CTA";
-import Photo from "../../assets/People.jpg";
+import Photo from "../../assets/People.webp";
 import { Link } from "react-scroll";
 import "./Header.scss";
 import Social from "./Social";

@@ -1,4 +1,5 @@
 import CV from "../../assets/MyCV.pdf";
+import { Link } from "react-scroll";
 
 const CTA = () => {
   return (
@@ -6,9 +7,9 @@ const CTA = () => {
       <a href={CV} download className="btn">
         Download CV
       </a>
-      <a href="#contact" className="btn btn-primary">
+      <Link to="contact" className="btn btn-primary">
         Let's talk
-      </a>
+      </Link>
     </div>
   );
 };

@@ -22,7 +22,7 @@ export const servicesData = [
     paragraf: {
       first: "Development of web applications",
       second: "Backend web portal development",
-      third: "Backnd for social networks",
+      third: "Backend for social networks",
     },
   },
 ];

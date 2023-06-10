@@ -2,6 +2,7 @@ import Photo from "../../assets/People.jpg";
 import { FaAward } from "react-icons/fa";
 import { FiUsers } from "react-icons/fi";
 import { VscFolderLibrary } from "react-icons/vsc";
+import { Link } from "react-scroll";
 import "./About.scss";
 
 const About = () => {
@@ -48,9 +49,9 @@ const About = () => {
             projects. I am always ready to work hard gradually improving my hard
             and soft skills.
           </p>
-          <a href="#contact" className="btn btn-primary">
+          <Link to="contact" className="btn btn-primary">
             Let's Talk
-          </a>
+          </Link>
         </div>
       </div>
     </section>

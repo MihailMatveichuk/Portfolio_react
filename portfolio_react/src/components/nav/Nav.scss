@@ -9,6 +9,8 @@ nav {
     left: 50%;
     transform: translateX(-50%);
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 0.8rem;
     border-radius: 3rem;
     backdrop-filter: blur(15px);
@@ -24,11 +26,6 @@ nav {
         font-size: 1.1rem;
         transition: all 0.5s;
 
-
-        &:hover {
-            background: rgba(0, 0, 0, 0.3);
-        }
-
         &[title]:hover:after {
             position: absolute;
             content: attr(title);
@@ -36,20 +33,38 @@ nav {
             top: -30px;
             left: 50%;
             transform: translateX(-50%)
-
         }
 
     }
-
     .active {
         background: var(--color-bg);
     }
 }
 
-.hidden{
-        position: static;
+
+// ================ MEDIUM DEVICES ================
+@media screen and (max-width: 1200px){
+    nav{
+        width: max-content;
+        padding: 0.7rem 1.7rem;
+    }
+
+    a[title]:hover:after {
         display: none;
     }
-    .fixed{
-        position: fixed;
+    
+  }
+  
+  // ================ SMALL DEVICES ================
+  @media screen and (max-width: 600px){
+    nav{
+        width: 95%;
+        padding: 0.7rem 1.5rem;
+
+        a{
+            padding: 0.5rem;
+        }
     }
+
+
+  }
