@@ -9,6 +9,10 @@ import { useState } from "react";
 
 const Nav = () => {
   const [active, setActive] = useState("#");
+  const navSize =
+    document.querySelector("nav")!.getBoundingClientRect().y + window.scrollY;
+  console.log(navSize);
+
   return (
     <nav>
       <a

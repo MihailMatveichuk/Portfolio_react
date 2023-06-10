@@ -11,6 +11,6 @@ export const articlesToBack = [
   { title: "Node JS", description: "Elementary" },
   { title: "Python", description: "Elementary" },
   { title: "GraphQL", description: "Elementary" },
-  { title: "MongoDB", description: "Elementary" },
-  { title: "MySQL", description: "Elementary" },
+  { title: "Postman", description: "Elementary" },
+  { title: "Jenkins", description: "Elementary" },
 ];

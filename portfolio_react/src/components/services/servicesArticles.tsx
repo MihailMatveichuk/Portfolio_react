@@ -2,26 +2,27 @@ export const servicesData = [
   {
     title: "SPA",
     paragraf: {
-      first: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      second: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      third: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      first: "Fast and stable web service",
+      second: "UI/UX design",
+      third: "Testing",
+      forth: "Deployment and technical support",
     },
   },
   {
     title: "Web Pages",
     paragraf: {
-      first: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      second: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      third: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      forth: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      first: "Custom Frontend Development",
+      second: "Helps improve user experience",
+      third: "UI design",
+      forth: "Cross-browser applications",
     },
   },
   {
-    title: "Server",
+    title: "Back-end",
     paragraf: {
-      first: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      second: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      third: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      first: "Development of web applications",
+      second: "Backend web portal development",
+      third: "Backnd for social networks",
     },
   },
 ];
